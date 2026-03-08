@@ -13,12 +13,15 @@ sentence-transformers>=2.7.0    # Semantic embeddings
 datasets>=2.19.0                # Dataset management
 
 # ── Data Processing ───────────────────────────────────
+streamlit>=1.32.0
 pandas>=2.2.0
 numpy>=1.26.0
+plotly>=5.22.0
+spacy>=3.7.0
 pdfplumber>=0.11.0              # PDF text extraction
-pymupdf>=1.24.0                 # Fitz — alternative PDF reader
 tqdm>=4.66.0                    # Progress bars
-
+pymupdf>=1.24.0                 # Fitz — alternative PDF reader
+               
 # ── Bilingual / Translation ───────────────────────────
 langdetect>=1.0.9               # Language detection
 deep-translator>=1.11.4         # Translation fallback

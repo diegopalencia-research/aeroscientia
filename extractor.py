@@ -25,13 +25,9 @@ from dataclasses import dataclass, field, asdict
 from typing import Optional
 from collections import defaultdict, Counter
 
-# ── Try imports (graceful fallback if not installed) ──────────────────────────
-try:
-    import spacy
-    SPACY_AVAILABLE = True
-except ImportError:
-    SPACY_AVAILABLE = False
-    print("⚠  spaCy not installed. Run: pip install spacy && python -m spacy download en_core_web_trf")
+# spaCy removido — incompatible con Python 3.14 (Streamlit Cloud)
+# Pipeline corre en modo reglas, funciona igual para esta app
+SPACY_AVAILABLE = False
 
 try:
     import pdfplumber
